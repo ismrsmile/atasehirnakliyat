@@ -110,7 +110,7 @@ html {
 .home {
 	width: 100%;
 	height: 70vh;
-	background: linear-gradient(rgba(5,7,13,0.80),rgba(10,7,16,0.80)),url("./Medias/background.jpg");
+	background: linear-gradient(rgba(5,7,13,0.90),rgba(10,7,16,0.90)),url("./Medias/background.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -193,6 +193,11 @@ html {
 	background: linear-gradient(90deg, rgba(35,20,40,1) 0%, rgba(18,19,27,1) 35%, rgba(21,22,31,1) 100%);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.stats .content {
+	display: flex;
+	flex-direction: row;
 }
 
 .stats .row {
@@ -351,14 +356,15 @@ html {
     	left: 3%;
     }
 
-    .stats .row .box {
-    	width: 110px;
-    	height: 100px;
+    .stats .content {
+    	flex-direction: column;
     }
-}
 
-@media(max-width: 463px) {
-	.stats .row .box h4 {
-		font-size: 1.2rem;
-	}
+    .stats .row .box {
+    	margin-bottom: 3rem;
+    }
+
+    .stats .row .box h4 {
+    	font-size: 1.6rem;
+    }
 }
